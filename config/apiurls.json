@@ -1,0 +1,11 @@
+{
+    
+    "showsUrls" :  {"0": "https://api.nbc.com/v3.5/shows?filter[active]=1&fields[shows]=shortTitle,sortTitle,category,showPathSetting,tuneIn&range=50&page=1",
+                    "1": "https://api.nbc.com/v3.5/shows?filter[active]=1&fields[shows]=shortTitle,sortTitle,category,showPathSetting,tuneIn&range=50&page=2",
+                    "2": "https://api.nbc.com/v3.5/shows?filter[active]=1&fields[shows]=shortTitle,sortTitle,category,showPathSetting,tuneIn&range=50&page=3"},
+                
+    "fullVideoApi" : "https://api.nbc.com/v3.5/videos?fields[videos]=type,permalink,title,airdate,expiration,seasonNumber,episodeNumber,runTime,guid,entitlement&fields[shows]=shortTitle&filter[published]=1&filter[expiration][value]=__CurrentTimeStamp__&filter[expiration][operator]=>=&filter[show]=__SHOW_ID__&filter[type][value]=Full Episode&filter[type][operator]==&sort=-airdate&range=50&page=1",
+    "clipVideoApi" : "https://api.nbc.com/v3.5/videos?fields[videos]=type,permalink,title,airdate,expiration,seasonNumber,episodeNumber,runTime,guid,entitlement&fields[shows]=shortTitle&filter[published]=1&filter[expiration][value]=__CurrentTimeStamp__&filter[expiration][operator]=>=&filter[show]=__SHOW_ID__&filter[type][value]=Full Episode&filter[type][operator]=<>&sort=-airdate&range=50&page=1"
+
+}
+
