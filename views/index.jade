@@ -1,0 +1,21 @@
+doctype html
+html
+	head
+		title Test By Universal
+	body
+		div#mainDiv
+			p Test by Universal
+
+		script(src='http://code.jquery.com/jquery-1.11.1.js')
+		script(src='http://localhost:3000/socket.io/socket.io.js')
+		script(type="text/javascript").
+			$( document ).ready(function() {
+				var socket = io.connect("http://localhost:3000");
+				
+				socket.on('makeAnAlert', function(data){
+					alert(data.data);
+				});
+				socket.on('appendPermaLink', function(data){
+					alert(data.permalink);
+				});
+			}); 
