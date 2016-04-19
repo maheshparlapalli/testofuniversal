@@ -65,7 +65,7 @@ function hitPermalink(url) {
             if(!err && response.statusCode == 200) {
                 resolve(url);
             } else {
-                console.log('Error while hitting Permalink : ' + err + ', Status code : ' + response.statusCode + '\n');
+                console.log('Error while hitting Permalink : ' + err + '\n');
                 reject(err);
             }
         });
@@ -83,7 +83,7 @@ function callApi(url) {
             if(!err && response.statusCode == 200) {
                 resolve(JSON.parse(body));
             } else {
-                console.log('Error while hitting show/video API : ' + err + ', Status code : ' + response.statusCode + '\n');
+                console.log('Error while hitting show/video API : ' + err + '\n');
                 reject(err);
             }
         });
